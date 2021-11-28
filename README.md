@@ -1,3 +1,6 @@
+![SportSee](sportsSee_logo.svg)
+
+
 # Project 9 - Front-end Dashboard
 
 This repo contains all the source code to run the micro API for the sports analytics dashboard SportSee.
