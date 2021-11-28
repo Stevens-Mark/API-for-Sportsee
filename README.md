@@ -6,8 +6,7 @@
 ## Develop an analytics dashboard with React
 
 This repo contains all the source code to run the micro API for the sports analytics dashboard SportSee.
-This is to be used in conjunction with the frontend source code.
-See details for lauching the project `https://github.com/Stevens-Mark/StevensMark_P12_08112021.git`
+This is to be used in conjunction with the frontend source code at `https://github.com/Stevens-Mark/StevensMark_P12_08112021.git`
 
 ## 1. General information
 
