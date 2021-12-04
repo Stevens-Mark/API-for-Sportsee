@@ -1,7 +1,7 @@
 ![SportSee](sportsSee_logo.svg)
 
 
-# OPENCLASSROOMS PROJECT 12 
+# OPENCLASSROOMS PROJECT 12 - (Micro API needed for Frontend project) ** (English) **
 
 ## Develop an analytics dashboard with React
 
@@ -69,3 +69,75 @@ This project includes four endpoints that you will be able to use:
 
 - `http://localhost:3000/user/12/performance` - Retrieves the performance of the user with id 12
 - `http://localhost:3000/user/18` - Retrieves user 18's main information.
+
+
+
+# OPENCLASSROOMS PROJECT 12 - (Micro API nécessaire pour le projet Frontend) ** (Français) **
+
+## Développer un tableau de bord analytique avec React
+
+Ce repo contient tout le code source pour exécuter la micro API pour le tableau de bord analytique sportif SportSee.
+Il doit être utilisé en conjonction avec le code source du frontend à l'adresse suivante :
+ `https://github.com/Stevens-Mark/StevensMark_P12_08112021.git`
+
+## 1. Informations générales
+
+Pour démarrer ce projet, vous êtes libre d'utiliser ou non Docker. Dans cette documentation, nous verrons plusieurs méthodes pour lancer le projet facilement.
+
+## 2. Projet (**sans Docker**)
+
+### 2.1 Pré-requis
+
+- NodeJS (**version 12.18**)](https://nodejs.org/en/)
+- Yarn](https://yarnpkg.com/)
+
+Si vous travaillez avec plusieurs versions de NodeJS, nous vous recommandons d'installer [nvm](https://github.com/nvm-sh/nvm). Cet outil vous permettra de gérer facilement vos versions de NodeJS.
+
+### 2.2 Lancement du projet
+
+- Bifurquez le dépôt
+- Clonez-le sur votre ordinateur.
+- La commande `yarn` vous permettra d'installer les dépendances.
+- La commande `yarn dev` vous permettra d'exécuter la micro API.
+
+
+## 3. Projet (**avec Docker**)
+
+### 2.1 Conditions préalables
+
+- Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+### 2.2 Démarrer le projet
+
+- La commande `docker image build --no-cache -t micro-api .` vous permettra de construire votre image.
+- La commande `docker container run --name micro-api -p 3000:3000 -dt micro-api yarn` vous permettra de créer votre conteneur Docker et d'exécuter votre image sur le port 3000.
+- La commande `docker container stop micro-api` vous permettra d'arrêter votre micro-api.
+- La commande `docker container rm micro-api` vous permettra de supprimer votre conteneur micro-api.
+
+### 2.3 Vscode et conteneurs distants
+
+Enfin, si vous avez VsCode, vous pouvez facilement lancer votre projet dans un environnement docker.
+
+Vous aurez besoin de l'extension [Remote Development extension] (https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). Une fois que vous avez installé cette extension, cliquez simplement sur le bouton `Reopen in Container`.
+
+Une fois dans le conteneur, exécutez la commande `yarn dev`.
+
+## 4. Points de terminaison
+
+### 4.1 Points de terminaison possibles
+
+Ce projet comprend quatre points de terminaison que vous pourrez utiliser : 
+
+- `http://localhost:3000/user/${userId}` - récupère les informations d'un utilisateur. Ce premier point de terminaison comprend l'identifiant de l'utilisateur, ses informations (prénom, nom et âge), le score du jour (todayScore) et les données clés (calories, macronutriments, etc.).
+- `http://localhost:3000/user/${userId}/activity` - récupère l'activité d'un utilisateur jour par jour avec les kilogrammes et les calories.
+- `http://localhost:3000/user/${userId}/average-sessions` - récupère la moyenne des sessions d'un utilisateur par jour. La semaine commence le lundi.
+- `http://localhost:3000/user/${userId}/performance` - récupère les performances d'un utilisateur (énergie, endurance, etc.).
+
+
+**Attention, actuellement seuls deux utilisateurs ont été simulés. Ils ont respectivement les userId 12 et 18.**
+
+### 4.2 Exemples de requêtes
+
+- `http://localhost:3000/user/12/performance` - Récupère les performances de l'utilisateur avec l'id 12.
+- `http://localhost:3000/user/18` - Récupère les informations principales de l'utilisateur 18.
+
