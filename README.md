@@ -1,7 +1,9 @@
 ![SportSee](sportsSee_logo.svg)
 
 
-# OPENCLASSROOMS PROJECT 12 - (Micro API needed for Frontend project) ** (English) **
+# OPENCLASSROOMS PROJECT 12 
+## (Micro API needed for Frontend project) 
+**(English)**
 
 ## Develop an analytics dashboard with React
 
@@ -72,7 +74,9 @@ This project includes four endpoints that you will be able to use:
 
 
 
-# OPENCLASSROOMS PROJECT 12 - (Micro API nécessaire pour le projet Frontend) ** (Français) **
+# OPENCLASSROOMS PROJECT 12
+## (Micro API nécessaire pour le projet Frontend) 
+**(Français)**
 
 ## Développer un tableau de bord analytique avec React
 
