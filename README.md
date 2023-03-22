@@ -1,7 +1,7 @@
 ![SportSee](sportsSee_logo.svg)
 
 
-# OPENCLASSROOMS PROJECT 12 
+# Sportsee
 ## (Micro API needed for Frontend project) 
 **(English)**
 
@@ -9,7 +9,7 @@
 
 This repo contains all the source code to run the micro API for the sports analytics dashboard SportSee.
 This is to be used in conjunction with the frontend source code at:
- `https://github.com/Stevens-Mark/StevensMark_P12_08112021.git`
+ `https://github.com/Stevens-Mark/Sportsee.git`
 
 ## 1. General information
 
@@ -74,7 +74,7 @@ This project includes four endpoints that you will be able to use:
 
 
 
-# OPENCLASSROOMS PROJECT 12
+# Sportsee
 ## (Micro API nécessaire pour le projet Frontend) 
 **(Français)**
 
@@ -82,7 +82,7 @@ This project includes four endpoints that you will be able to use:
 
 Ce repo contient tout le code source pour exécuter la micro API pour le tableau de bord analytique sportif SportSee.
 Il doit être utilisé en conjonction avec le code source du frontend à l'adresse suivante :
- `https://github.com/Stevens-Mark/StevensMark_P12_08112021.git`
+ `https://github.com/Stevens-Mark/Sportsee.git`
 
 ## 1. Informations générales
 
